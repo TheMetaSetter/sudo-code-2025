@@ -1,0 +1,9 @@
+name: sudo-code-2025
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python<3.10
+  - bs4
+  - openai
+  - nltk=3.4
