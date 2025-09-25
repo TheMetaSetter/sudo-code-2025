@@ -7,3 +7,8 @@ dependencies:
   - bs4
   - openai
   - nltk=3.4
+  - google-genai
+  - pip
+  - pip:
+      - dotenv
+      - sapling-py
