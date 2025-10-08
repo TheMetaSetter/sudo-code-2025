@@ -8,7 +8,9 @@ dependencies:
   - openai
   - nltk=3.4
   - google-genai
+  - scikit-learn<=1.6.1
   - pip
   - pip:
       - dotenv
       - sapling-py
+      - gensim
