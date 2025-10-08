@@ -32,7 +32,11 @@ def segment_sentences_into_words(
     - List of word tokens for the sentence.
     """
 
+    import time
+    start_time = time.time()
     ner_results = nlp_pipeline(sentences)
+    end_time = time.time()
+    print(f"nlp_pipeline(sentences) took {end_time - start_time:.4f} seconds")
     
     # Do not use all the CPUs since it will cause local deadlock.
     with Pool(cpu_count() - 3) as pool:
